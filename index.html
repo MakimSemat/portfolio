@@ -198,11 +198,14 @@
         }
         
         .hero-image img {
-            max-width: 400px;
-            border-radius: 50%;
-            border: 10px solid var(--light-color);
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+          width: 300px;         /* fixed size (adjust as you like) */
+          height: 300px;        /* same as width to make it square */
+          object-fit: cover;    /* crops the image instead of squishing it */
+          border-radius: 50%;   /* makes it a perfect circle */
+          border: 10px solid var(--light-color);
+          box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
         }
+
         
         /* About Section */
         #about {
@@ -810,4 +813,5 @@
     </script>
 </body>
 </html>
+
 
